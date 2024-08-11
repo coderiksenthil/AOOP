@@ -1,0 +1,26 @@
+Def:
+In State pattern a class behavior changes based on its state. 
+
+This type of design pattern comes under behavior pattern.
+
+In State pattern, we create objects which represent various states 
+and a context object whose behavior varies as its state object changes.
+
+Example:
+We are going to create a State interface defining an action and 
+concrete state classes implementing the State interface. 
+
+
+Context is a class which carries a State.
+
+StatePatternDemo, our demo class, will use Context and state 
+objects to demonstrate change in Context behavior based on 
+type of state it is in.
+
+Steps:
+1. Create an interface. (State.java)
+2. Create concrete classes implementing the same interface. 
+(StartState.java & StopState.java)
+3. Create Context Class. (Context.java)
+4. Use the Context to see change in behaviour when State changes. 
+(StatePatternDemo.java)

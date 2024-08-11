@@ -1,0 +1,18 @@
+Explanation:
+
+Logger Class:
+
+Singleton Instance: A private static variable single_instance is used to hold the single instance of the class.
+Private Constructor: The constructor is private to prevent direct instantiation.
+getInstance Method: This static method returns the single instance of the Logger class. The method is thread-safe by using double-checked locking.
+log Method: A simple method to log messages, here it just prints the message to the console.
+
+Main Class:
+
+Get Logger Instance: The getInstance method is called to get the single instance of the Logger.
+Log Messages: The log method is called to log messages.
+Benefits of Singleton Pattern in Logging:
+Single Point of Control: Ensures that all logging operations are handled by a single instance.
+Resource Management: Prevents the creation of multiple instances, which could lead to resource wastage.
+Global Access: The Singleton instance is globally accessible, making it easy to use throughout the application.
+This implementation ensures that the Logger instance is created only when it is needed and only once, thus adhering to the Singleton design pattern principles.
