@@ -1,5 +1,3 @@
-// Filename: PalindromeChecker.java
-
 public class PalindromeChecker {
 
     public static boolean isPalindrome(String str) {
